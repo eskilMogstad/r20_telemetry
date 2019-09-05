@@ -338,7 +338,6 @@ int add_msg_to_buffer(can_over_udp_msg_t const * const msg, uint32_t const udp_l
 
 int flush_send_buffer()
 {
-    int *payload;
     static int packet_id;
     u8_t i;
     u8_t retries = MAX_SEND_RETRY;
@@ -353,11 +352,6 @@ int flush_send_buffer()
         } else {
             memcpy(packet->payload, send_buf, buffer_tail);
         }
-
-        /* always increment the id */
-        payload = (int*) (packet->payload);
-
-        payload[0] = htonl(packet_id);
 
         while (retries) {
             err = udp_send(pcb[i], packet);
