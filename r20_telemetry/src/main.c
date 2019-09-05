@@ -170,7 +170,8 @@ int main(void)
             // Add frame to buffer, flush if full
             while(add_msg_to_buffer(&udp_msg, udp_length) == XST_FAILURE)
             {
-                xil_printf("Buffer full, flushing\r\n");
+                //xil_printf("Buffer full, flushing\r\n");
+                xemacif_input(netif);
                 flush_send_buffer();
             }
         }
@@ -183,7 +184,6 @@ int main(void)
 			tcp_slowtmr();
 			TcpSlowTmrFlag = 0;
 		}
-		xemacif_input(netif);
 		//transfer_data();
 	}
 
