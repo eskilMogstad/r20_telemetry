@@ -175,15 +175,15 @@ int main(void)
             }
         }
 
-//		if (TcpFastTmrFlag) {
-//			tcp_fasttmr();
-//			TcpFastTmrFlag = 0;
-//		}
-//		if (TcpSlowTmrFlag) {
-//			tcp_slowtmr();
-//			TcpSlowTmrFlag = 0;
-//		}
-//		xemacif_input(netif);
+		if (TcpFastTmrFlag) {
+			tcp_fasttmr();
+			TcpFastTmrFlag = 0;
+		}
+		if (TcpSlowTmrFlag) {
+			tcp_slowtmr();
+			TcpSlowTmrFlag = 0;
+		}
+		xemacif_input(netif);
 		//transfer_data();
 	}
 
