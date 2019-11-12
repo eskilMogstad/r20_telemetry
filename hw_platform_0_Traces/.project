@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>hw_platform_0_Traces</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.linuxtools.tmf.project.nature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>Traces/Run_Aug-28_16-37/PS_Trace_Aug-28_16-37/PS_Trace_Aug-28_16-37_</name>
+			<type>1</type>
+			<location>C:/R20/Learning/r20_telemetry/hw_platform_0_Traces/Traces/.bookmarks</location>
+		</link>
+		<link>
+			<name>Traces/Run_Sep-04_12-16/PS_Trace_Sep-04_12-16/PS_Trace_Sep-04_12-16_</name>
+			<type>1</type>
+			<location>C:/R20/Learning/r20_telemetry/hw_platform_0_Traces/Traces/.bookmarks</location>
+		</link>
+	</linkedResources>
+</projectDescription>
