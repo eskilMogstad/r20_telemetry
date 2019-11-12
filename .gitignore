@@ -1,7 +1,6 @@
 .metadata/
 webtalk/
 vivado/
-*.bit
 *.o
 *.a
 *.d
