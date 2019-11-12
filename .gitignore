@@ -8,7 +8,6 @@ vivado/
 **/bootimage/
 *.log
 *.jou
-*.hdf
 .temp/
 RemoteSystemsTempFiles/
 **/Debug
